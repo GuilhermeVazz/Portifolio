@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/scss/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="headerIndex">
+            <ul class="navLeft">
+                <li>
+                <li>
+                    <div class="styleBorder"><a href="">Inicio</a></div>
+                </li>
+                <li>
+                    <div class="styleBorder"><a href="#aboutMe">Sobre</a></div>
+                </li>
+                <li>
+                    <div class="styleBorder"><a href="">Projetos</a></div>
+                </li>
+                <li>
+                    <div class="styleBorder"><a href="">Contato</a></div>
+                </li>
+            </ul>
+
+            <ul class="navRight">
+                <li><a href=""><img src="./src/images/icons/iconGitHub.png"></a></li>
+                <li><a href=""><img src="src/images/icons/iconLinkedin.png"></a></li>
+                <li><a href=""><img src="src/images/icons/iconInstagram.png"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- 626x 469 -->
+        <section id="welcomeIndex">
+            <hr>
+
+            <h1 id="welcome">Olha só,<br>que prazer<br>te ver<br>por aqui</h1>
+            <p id="aboutWelcome">Sinta-se livre para dar um explorada, aqui você possui o controle =). <br>Atráves
+                desse portifólio montado humildamente por mim,<br> você poderá encontrar projetos, informações sobre
+                mim (prometo que sou um pessoa muuuito legal haha) e informações de contato. caso queria queria pular
+                direto para um parte especifica use o menu no topo da página, ele irá te guiar para onde desejar. Muito
+                obrigado por sua visita e qualquer dúvida basta me mandar uma mensagem atráves que qualquer rede
+                social.</p>
+
+        </section>
+
+        <section id="aboutMe">
+            <hr>
+            <div id="aboutMeContent">
+                <div class="alignAboutMe">
+                    <img src="./src/images/images/avatarAboutMe.png">
+                    <h2>Olá, me chamo Guilherme.</h2>
+                    <p>Detentor de uma paixão por enorme por games e tecnologia, sempre me considerei muito curioso e
+                        apaixonado pelas artes e como elas podem mudar as vidas das pessoas, desde muito cedo sentia
+                        uma
+                        vontade enorme de ajudar a dar uma perpesctiva difente para a vida das pessoas atráves da
+                        mesma,
+                        porém não levava jeito para nada =(, até que me inscrevi no vestibular da <strong>Fatec Mogi
+                            das Cruzes</strong> e lá conheci o mundo da programação e o que ele é capaz de fazer, hoje
+                        curso <strong>Análise e Dev. de Sistemas</strong> e considero o <strong>FrontEnd</strong> como
+                        minha vocação</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portifolio">
+            <hr>
+            <div id="portifolioContent">
+
+                <h1> EM CONSTRUÇÃO</h1>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <hr>
+            <div id="contatoContent">
+                <h2>Aqui você consegue falar comigo ;)</h2>
+                <p>No momento o formulário de contato <strong>ainda não está funcionando</strong><br>
+                    para enviar alguma mensagem <strong>utilize alguma rede social ao lado.</strong></p>
+
+                <div id="formularioContato">
+                    <form method="POST">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+                        <label for="email">Seu email:</label>
+                        <input id="email" name="email" placeholder="Insira seu email aqui" required>
+                        <label for="motivoContato">Assunto:</label>
+                        <select name="motivoContato" id="motivoContato" required>
+                            <option>Ofertas</option>
+                            <option>Open Source</option>
+                            <option>Duvidas</option>
+                            <option>Outros</option>
+                        </select>
+                        <textarea id="texto" placeholder="Sua mensagem vem aqui" required></textarea>
+                        <button type="submit" id="enviarMensagem">Enviar</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <ul class="navContato">
+                        <li><a href=""><img src="./src/images/icons/iconGitHub.png"></a></li>
+                        <li><a href=""><img src="src/images/icons/iconLinkedin.png"></a></li>
+                        <li><a href=""><img src="src/images/icons/iconInstagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
