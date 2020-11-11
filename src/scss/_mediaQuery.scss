@@ -48,8 +48,8 @@
     
         background: url("../images/images/vectorIndex.png");
         background-repeat: no-repeat;
-        background-position: right center;
-        background-size: 400px 400px;
+        background-position: right top;
+        background-size: 350px 350px;
     
         hr {
             margin-top: 6%;
@@ -59,9 +59,7 @@
         #contatoContent {
             margin-top: 3%;
             height: 400px;
-    
             padding: 2rem 3rem;
-    
             h2 {
                 color: $white;
                 font-family: $varela;
@@ -77,14 +75,9 @@
     
                 margin-top: 1%;
             }
-    
-    
             #formularioContato {
-                float: left;
-                margin-right: 55%;
-    
+                margin-right: 48%;
                 margin-top: 2%;
-    
                 form {
                     display: flex;
                     flex-direction: column;
@@ -92,118 +85,35 @@
                     &:nth-child(4) {
                         flex-direction: row;
                     }
-    
                     margin-top: 3%;
-    
-                    label {
-                        color: $white;
-                        font-family: $varela;
-                        letter-spacing: 1px;
-                        font-size: 18px;
-    
-                        margin-bottom: 3px;
-    
-                    }
-    
                     input {
     
                         width: 250px;
                         height: 40px;
-                        padding: 4px 8px;
-    
-                        border: none;
-                        border-radius: 4rem;
-    
-                        margin-bottom: 4.2%;
-    
-                        font-family: $varela;
-                        letter-spacing: 1px;
-                        font-size: 18px;
-    
                     }
-    
-                    select {
-                        width: 250px;
-                        height: 40px;
-                        padding: 4px 6px;
-    
-                        border: none;
-    
-                        margin-bottom: 2%;
-    
-                        font-family: $varela;
-                        letter-spacing: 1px;
-                        font-size: 18px;
-    
-                    }
-    
                     textarea {
-                        position: absolute;
-                        width: 400px;
-                        height: 265px;
-                        padding: 8px 10px;
-    
                         margin-top: 1.3%;
                         margin-left: 22%;
-                        border: none;
-                        border-radius: 1rem;
-    
-                        font-family: $varela;
-                        letter-spacing: 1px;
-                        font-size: 18px;
-    
-                    }
-    
-                    button {
-                        width: 250px;
-                        height: 40px;
-                        padding: 4px 6px;
-                        
-                        border: none;
-                        border-radius: 4rem;
-    
-                        margin-top: 8%;
-    
-                        font-family: $varela;
-                        letter-spacing: 1px;
-                        font-size: 18px;
-    
                     }
                 }
-    
             }
-    
             .navContato {
-    
-                margin-top: 3%;
+                margin-top: 6%;
                 li {
                     list-style: none;
     
                     &:nth-child(2) {
-                        margin-top: 1.5%;
+                        margin-top: 2.5%;
                     }
     
                     &:nth-child(3) {
-                        margin-top: 1.5%;
+                        margin-top: 2.5%;
                     }
-    
                     a {
-                        text-decoration: none;
-    
                         img {
-                            width: 80px;
-                            height: 80px;
+                            width: 60px;
+                            height: 60px;
     
-                            border-radius: 50%;
-    
-                            transition: transform;
-                            transition-duration: .2s;
-    
-                            
-    
-                            &:hover {
-                                transform: scale(1.2)
-                            }
                         }
                     }
                 }
