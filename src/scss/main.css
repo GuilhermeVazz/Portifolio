@@ -112,7 +112,7 @@ html {
 }
 
 #welcomeIndex hr {
-  border-radius: 4rem;
+  margin-top: 0%;
   border-radius: 4rem;
 }
 
@@ -362,7 +362,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3%;
+  margin-top: 6%;
 }
 
 #contato #contatoContent .navContato li {
@@ -380,7 +380,7 @@ hr {
 }
 
 #rodape {
-  margin-top: 45vh;
+  margin-top: 50vh;
 }
 
 #rodape hr {
@@ -551,7 +551,7 @@ hr {
             transform: scale(1.2);
   }
   #rodape {
-    margin-top: 45vh;
+    margin-top: 50vh;
   }
   #rodape hr {
     margin-top: 6%;
