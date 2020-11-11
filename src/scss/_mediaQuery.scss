@@ -188,7 +188,7 @@
     }
 }
 
-@media (min-width: 525px){
+@media (min-width: 568px){
     .headerIndex{
         height: 60px;
         .navLeft{
@@ -257,11 +257,10 @@
             h2 {
                 margin-left: 0%;
                 font-size: 20px;
-                text-align: center;
+               
             }
     
             p {
-                text-align: center;
                 margin-top: 2%;
                 padding: 0px 10px;
                 color: $backgroundColor;
@@ -269,6 +268,11 @@
                 letter-spacing: 2px;
                 font-size: 13px;
             }
+    
+    
         }
+    
     }
+
+    
 }

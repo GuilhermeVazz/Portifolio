@@ -96,14 +96,6 @@ html {
   height: 30px;
   border: none;
   border-radius: 50%;
-  -webkit-transition: background;
-  transition: background;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
 }
 
 #welcomeIndex {
@@ -172,16 +164,16 @@ html {
   width: 150px;
   height: 150px;
   margin-top: 5%;
-  margin-left: 25%;
+  margin-left: 31%;
 }
 
 #aboutMe #aboutMeContent h2 {
   margin-top: 2%;
-  margin-left: 8%;
   color: #181818;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
   font-size: 18px;
+  text-align: center;
 }
 
 #aboutMe #aboutMeContent p {
@@ -191,6 +183,7 @@ html {
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
   font-size: 11px;
+  text-align: center;
 }
 
 #portifolio {
@@ -527,7 +520,7 @@ hr {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 5%;
   }
   #contato #contatoContent .navContato li {
     list-style: none;
@@ -583,6 +576,71 @@ hr {
     text-decoration: none;
     color: #ff5d00;
     font-family: "Varela Round", sans-serif;
+  }
+}
+
+@media (min-width: 568px) {
+  .headerIndex {
+    height: 60px;
+  }
+  .headerIndex .navLeft li {
+    margin-left: 4%;
+  }
+  .headerIndex .navLeft li:nth-child(1) {
+    margin-left: 4%;
+  }
+  .headerIndex .navLeft li a {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+  }
+  .headerIndex .navRight {
+    margin-left: -15%;
+  }
+  .headerIndex .navRight li {
+    margin-left: -25%;
+    list-style: none;
+  }
+  .headerIndex .navRight li:nth-child(1) {
+    margin-right: 10%;
+  }
+  .headerIndex .navRight li:nth-child(2) {
+    margin-right: 10%;
+  }
+  .headerIndex .navRight li a img {
+    width: 35px;
+    height: 35px;
+  }
+  #welcomeIndex #welcome {
+    margin-top: 4%;
+    padding: 10px 10px;
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 50px;
+  }
+  #welcomeIndex #aboutWelcome {
+    margin-top: 4%;
+  }
+  #aboutMe {
+    max-width: 100%;
+  }
+  #aboutMe hr {
+    margin-top: 3%;
+    border-radius: 4rem;
+  }
+  #aboutMe #aboutMeContent img {
+    margin-left: 37%;
+  }
+  #aboutMe #aboutMeContent h2 {
+    margin-left: 0%;
+    font-size: 20px;
+  }
+  #aboutMe #aboutMeContent p {
+    margin-top: 2%;
+    padding: 0px 10px;
+    color: #181818;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
