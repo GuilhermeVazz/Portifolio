@@ -1,17 +1,19 @@
-#welcomeIndex{
-   margin-top: 2%; 
-   margin-left: 10%;
+#welcomeIndex {
+    margin-top: 2%;
+    margin-left: 10%;
 
-   max-width: 80%;
-    hr{
-        
+    max-width: 80%;
+
+    hr {
+
         border-radius: 4rem;
         border-radius: 4rem;
     }
-    #welcome{
+
+    #welcome {
         margin-top: 4%;
         padding: 10px 10px;
-        
+
         color: $white;
         font-family: $varela;
         font-size: 80px;
@@ -20,8 +22,9 @@
         margin-right: 8%;
         float: left;
     }
-    #aboutWelcome{
-        
+
+    #aboutWelcome {
+
         margin-top: 9%;
         border: none;
         color: $white;
@@ -32,42 +35,43 @@
     }
 }
 
-#aboutMe{
-    
+#aboutMe {
+
     clear: both;
 
     max-width: 80%;
-    
+
     margin-left: 10%;
-    hr{
+
+    hr {
         margin-top: 13%;
         border-radius: 4rem;
     }
 
-    #aboutMeContent{
+    #aboutMeContent {
         background-color: $gray;
         height: 400px;
         margin-top: 6%;
         border-radius: 1rem;
         padding: 3rem 5rem;
 
-        img{
+        img {
             width: 300px;
-            height:300px;
-            
+            height: 300px;
+
             margin-left: 2%;
             margin-right: 10%;
             float: left;
         }
 
-        h2{
+        h2 {
             color: $white;
             font-family: $varela;
             letter-spacing: 2px;
             font-size: 28px;
         }
 
-        p{
+        p {
             margin-top: 2%;
             color: $white;
             font-family: $varela;
@@ -76,33 +80,33 @@
             line-height: rem;
         }
 
-        
+
     }
-    
+
 }
 
-#portifolio{
+#portifolio {
     max-width: 80%;
-    
+
     margin-left: 10%;
-    
-    hr{
+
+    hr {
         margin-top: 6%;
         border-radius: 4rem;
     }
-    
-    #portifolioContent{
+
+    #portifolioContent {
 
         background-color: $gray;
-        
+
         height: 400px;
         margin-top: 6%;
-        
+
         border-radius: 1rem;
         padding: 3rem 5rem;
         text-align: center;
 
-        h1{
+        h1 {
             margin-top: 100px;
             color: $white;
             font-family: $varela;
@@ -112,54 +116,61 @@
     }
 }
 
-#contato{
+#contato {
     clear: both;
     max-width: 80%;
-    
+
     margin-left: 10%;
-    
-    hr{
+
+    background: url("../images/images/vectorIndex.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    hr {
         margin-top: 6%;
         border-radius: 4rem;
     }
 
-    #contatoContent{
+    #contatoContent {
         margin-top: 3%;
         height: 400px;
-        
+
         padding: 2rem 3rem;
-        h2{
+
+        h2 {
             color: $white;
             font-family: $varela;
             letter-spacing: 2px;
             font-size: 23px;
         }
 
-        p{
+        p {
             color: $white;
             font-family: $varela;
             letter-spacing: 2px;
             font-size: 10px;
-            
+
             margin-top: 1%;
         }
-    
 
-        #formularioContato{
+
+        #formularioContato {
             float: left;
             margin-right: 44%;
 
             margin-top: 2%;
-            form{
+
+            form {
                 display: flex;
                 flex-direction: column;
-            
-                &:nth-child(4){
+
+                &:nth-child(4) {
                     flex-direction: row;
-                }   
-          
+                }
+
                 margin-top: 3%;
-                label{
+
+                label {
                     color: $white;
                     font-family: $varela;
                     letter-spacing: 1px;
@@ -168,8 +179,9 @@
                     margin-bottom: 3px;
 
                 }
-                input{
-                
+
+                input {
+
                     width: 250px;
                     height: 40px;
                     padding: 4px 8px;
@@ -185,11 +197,11 @@
 
                 }
 
-                select{
+                select {
                     width: 250px;
                     height: 40px;
                     padding: 4px 6px;
-                
+
                     border: none;
 
                     margin-bottom: 2%;
@@ -200,12 +212,12 @@
 
                 }
 
-                textarea{
+                textarea {
                     position: absolute;
                     width: 400px;
                     height: 265px;
                     padding: 8px 10px;
-                
+
                     margin-top: 1.3%;
                     margin-left: 18%;
                     border: none;
@@ -217,14 +229,14 @@
 
                 }
 
-                button{
+                button {
                     width: 250px;
                     height: 40px;
                     padding: 4px 6px;
-                
+
                     border: none;
                     border-radius: 4rem;
-                    
+
                     margin-top: 8%;
 
                     font-family: $varela;
@@ -233,25 +245,28 @@
 
                 }
             }
-            
+
         }
 
-        .navContato{
+        .navContato {
 
             margin-top: 3%;
-            li{
+
+            li {
                 list-style: none;
-                
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     margin-top: 1.5%;
                 }
 
-                &:nth-child(3){
+                &:nth-child(3) {
                     margin-top: 1.5%;
                 }
-                a{
+
+                a {
                     text-decoration: none;
-                    img{
+
+                    img {
                         width: 80px;
                         height: 80px;
 
@@ -259,7 +274,10 @@
 
                         transition: transform;
                         transition-duration: .2s;
-                        &:hover{
+
+                        
+
+                        &:hover {
                             transform: scale(1.2)
                         }
                     }
