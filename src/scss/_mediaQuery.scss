@@ -26,6 +26,7 @@
     
         #aboutWelcome {
             margin-top: 6%;
+            margin-bottom: -6%;
             letter-spacing: 1.5px;
             font-size: 15px;
         }
@@ -49,7 +50,7 @@
         background: url("../images/images/vectorIndex.png");
         background-repeat: no-repeat;
         background-position: right top;
-        background-size: 350px 350px;
+        background-size: 350px 320px;
     
         hr {
             margin-top: 6%;
@@ -120,4 +121,6 @@
             }
         }
     }
+    
+
 }
