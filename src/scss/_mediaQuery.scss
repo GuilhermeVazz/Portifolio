@@ -1,4 +1,4 @@
-@media (max-width: 369px){
+@media (max-width: 320pxpx){
      body{
         height: 330vh;
     }
@@ -17,7 +17,7 @@
         }
         .navRight{
             li{
-                margin-right: 5%;
+                margin-right: 4%;
                 &:nth-child(1){
                     margin-right: 10%;
                 }
@@ -26,8 +26,8 @@
                 }
                 a{
                     img{ 
-                        width: 30px;
-                        height: 30px;
+                        width: 28px;
+                        height: 28px;
                     }
                 }
             }
