@@ -112,17 +112,20 @@
         }
     }
 }
-
+hr {
+    margin-top: 8%;
+    border-radius: 4rem;
+}
 #contato {
     clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
-    hr {
-        margin-top: 6%;
-        border-radius: 4rem;
-    }
+    
 
     #contatoContent {
-        margin-top: 3%;
+        margin-top: 2%;
         height: 400px;
 
         padding: 2rem 3rem;
@@ -145,6 +148,9 @@
 
 
         #formularioContato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-top: 4%;
 
             form {
@@ -234,10 +240,11 @@
         }
 
         .navContato {
-            max-width: 100%;
+            max-width: 250px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             margin-top: 3%;
 
             li {
@@ -251,15 +258,6 @@
                         height: 50px;
 
                         border-radius: 50%;
-
-                        transition: transform;
-                        transition-duration: .2s;
-
-                        
-
-                        &:hover {
-                            transform: scale(1.2)
-                        }
                     }
                 }
             }

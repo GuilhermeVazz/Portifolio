@@ -1,637 +1,588 @@
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-*, html, body {
-  font-family: "Nunito", sans-serif;
+body {
+  background-color: #181818;
+  max-width: 100%;
+  height: 320vh;
 }
 
-body {
-  height: 149.2vh;
+html {
+  max-width: 100%;
 }
 
 .headerIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: space-between;
-}
-
-.headerIndex .menuIndex {
-  background-color: #000000;
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
-.headerIndex .menuIndex nav {
-  width: 100%;
-}
-
-.headerIndex .menuIndex nav ul li {
-  display: inline;
-  justify-items: center;
-  font-size: 1.6rem;
-  letter-spacing: .2rem;
-  margin-left: 2%;
-}
-
-.headerIndex .menuIndex nav ul li a {
-  text-decoration: none;
-  color: #dadada;
-  -webkit-transition: color;
-  transition: color;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.headerIndex .menuIndex nav ul li a:hover {
-  color: #FFFFFF;
-}
-
-.headerIndex .carrinhoCompras {
-  position: absolute;
-  margin-left: 91%;
-}
-
-.headerIndex .carrinhoCompras button {
-  position: fixed;
-  background: none;
-  border: none;
-  text-align: center;
-  outline: none;
-  width: 80px;
-  height: 80px;
-}
-
-.headerIndex .carrinhoCompras button:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.headerIndex .carrinhoCompras button img {
-  padding: 4px 4px;
-  margin-top: 2px;
-  width: 60px;
-  height: 60px;
-}
-
-.menuLateral {
-  padding: 12px 12px;
-  margin-top: 4rem;
-  background-color: #000000;
-  width: 600px;
-  position: absolute;
-  border-radius: 0px 5px 5px 0px;
-  -webkit-box-shadow: -4px 0px 50px -7px #000000;
-  box-shadow: -4px 0px 50px -7px #000000;
-}
-
-.menuLateral p {
-  font-size: 30px;
-  color: #FFFFFF;
-  font-weight: 500;
-  margin-bottom: 2px;
-}
-
-.menuLateral nav ul .navMarcas {
-  color: #bfbfbf;
-  font-size: 25px;
-  -webkit-transition: color;
-  transition: color;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.menuLateral nav ul .navMarcas a {
-  text-decoration: none;
-  color: #FFFFFF;
-  -webkit-transition: color;
-  transition: color;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.menuLateral nav ul .navMarcas a:hover {
-  color: #bfbfbf;
-}
-
-.menuLateral nav ul .navMarcas .navNike a {
-  text-decoration: none;
-  list-style: none;
-  color: #FFFFFF;
-  font-size: 18px;
-  margin-left: 8%;
-  -webkit-transition: color;
-  transition: color;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.menuLateral nav ul .navMarcas .navNike a:hover {
-  color: #bfbfbf;
-}
-
-.gridProdutos {
-  display: -ms-grid;
-  display: grid;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  -ms-grid-columns: 360px 400px 400px;
-      grid-template-columns: 360px 400px 400px;
-  margin-left: 520px;
-  margin-top: 8rem;
-}
-
-.gridProdutos .tenis {
-  height: 340px;
-  background: url("../images/tenis/stefanJanoski/Preto/stefanJanoski.jpg");
-  background-position: top center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.gridProdutos .tenis:nth-child(2) {
-  margin-left: 40px;
-  background: url("../images/airForce1.png");
-  background-position: center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(3) {
-  margin-left: 40px;
-  background: url("../images/jordan1.png");
-  background-position: center;
-  background-size: 320px 280px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(4) {
-  margin-top: 40px;
-  background: url("../images/busenitz1.png");
-  background-position: center;
-  background-size: 280px 220px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(5) {
-  margin-left: 40px;
-  margin-top: 40px;
-  background: url("../images/nmdR1.png");
-  background-position: center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(6) {
-  margin-left: 40px;
-  margin-top: 40px;
-  background: url("../images/adidasSuperStar.png");
-  background-position: center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(7) {
-  margin-top: 40px;
-  background: url("../images/pumaSuede.jpg");
-  background-position: center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(8) {
-  margin-left: 40px;
-  margin-top: 40px;
-  background: url("../images/pumaLQDCELL.png");
-  background-position: center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis:nth-child(9) {
-  margin-left: 40px;
-  margin-top: 40px;
-  background: url("../images/pumaRS-X-Reinvention.png");
-  background-position: top center;
-  background-size: 320px 320px;
-  background-repeat: no-repeat;
-}
-
-.gridProdutos .tenis .preco {
-  border: none;
-  border-radius: 10px 10px 10px 10px;
-  overflow: hidden;
-  padding: 8px 12px;
-  width: 46%;
-  height: 40px;
-  font-size: 20px;
-  background: #e3e3e3;
-  font-family: "Nunito", sans-serif;
-  -webkit-transition: background;
-  transition: background;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
-}
-
-.gridProdutos .tenis .preco:hover {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px 10px 10px 10px;
-}
-
-.gridProdutos .tenis .nomeTenis {
-  text-align: center;
-  border: none;
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  background: #e3e3e3;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  margin-top: 58.5%;
-}
-
-.gridProdutos .tenis .addCarrinho {
-  text-align: center;
-  border: none;
-  border-radius: 0px 0px 10px 10px;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background: #e3e3e3;
-  -webkit-transition: background;
-  transition: background;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-  text-decoration: none;
-  color: #000000;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.gridProdutos .tenis .addCarrinho:hover {
-  background: #bfbfbf;
-}
-
-.gridProdutos .tenis .addCarrinho a {
-  text-decoration: none;
-  color: #000000;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-#rodape {
-  margin-top: 5%;
-  width: 100%;
-  height: 200px;
-  background-color: #000000;
-  color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 0rem 5rem;
-}
-
-#rodape ul {
-  text-align: left;
-  padding: 10px 10px;
-}
-
-#rodape ul p {
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 4px;
-  font-size: 20px;
-}
-
-#rodape ul li {
-  padding: 0px 7px;
-  margin-top: 2px;
-  list-style: none;
-}
-
-#rodape ul li a {
-  text-decoration: none;
-  color: #dadada;
-}
-
-#rodape ul li a:hover {
-  color: #bfbfbf;
-}
-
-#rodape ul:nth-child(2) {
-  margin-left: 2%;
-}
-
-#rodape ul:nth-child(3) {
-  margin-left: 2%;
-}
-
-body {
-  height: 120vh;
-}
-
-.menuLateralTenis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.fotosTenis {
-  background-position: top center;
+  max-width: 100%;
   margin-top: 1%;
-  margin-left: 10%;
-  width: 150px;
-  height: 150px;
-  float: left;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.fotosTenis:hover {
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
-}
-
-.fotosTenis:nth-child(2) {
-  clear: both;
-}
-
-.fotosTenis:nth-child(3) {
-  clear: both;
-}
-
-.fotosTenis:nth-child(4) {
-  clear: both;
-}
-
-.PaginaProd {
-  margin-top: 8rem;
-  width: 80%;
-  margin-left: 10%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.PaginaProd #nomeDoProduto {
-  position: absolute;
-  margin-left: -16.5%;
-  font-family: "Nunito", sans-serif;
-  font-size: 80px;
-}
-
-.PaginaProd .numeroTenis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-}
-
-.PaginaProd .numeroTenis #exibirTenis {
-  border-radius: .2rem;
-  margin-left: -4.5%;
-  width: 600px;
-  height: 600px;
-  margin-right: 32%;
-}
-
-.PaginaProd .numeroTenis .numeroDoTenis {
-  margin-top: 6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.PaginaProd .numeroTenis .numeroDoTenis button {
-  width: 80px;
-  height: 80px;
-  margin-top: 15.2%;
-  border-radius: 50%;
-  border: 1px solid #000000;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
-  color: #000000;
-  background: #FFFFFF;
-  outline: none;
-  -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
-  transition: transform;
-  transition: transform, -webkit-transform;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.PaginaProd .numeroTenis .numeroDoTenis button:hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
-}
-
-.PaginaProd .numeroTenis .numeroDoTenis button:focus {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
-}
-
-.PaginaProd .numeroTenis .numeroDoTenis .chooseSize {
-  width: 200px;
-  margin-left: -19%;
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-}
-
-.PaginaProd #coresTenis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  margin-left: -18.5%;
-  width: 50%;
+  background: transparent;
 }
 
-.PaginaProd #coresTenis button {
+.headerIndex .navLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+}
+
+.headerIndex .navLeft li {
+  list-style: none;
+  margin-left: 2%;
+}
+
+.headerIndex .navLeft li:nth-child(1) {
+  margin-left: 2%;
+}
+
+.headerIndex .navLeft li a {
+  text-decoration: none;
+  color: #e3e3e3;
+  font-family: "Varela Round", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.headerIndex .navRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -15%;
+}
+
+.headerIndex .navRight li {
+  margin-left: -15%;
+  list-style: none;
+}
+
+.headerIndex .navRight li:nth-child(1) {
+  margin-right: 5%;
+}
+
+.headerIndex .navRight li:nth-child(2) {
+  margin-right: 5%;
+  margin-left: 0%;
+}
+
+.headerIndex .navRight li:nth-child(3) {
+  margin-left: 0%;
+}
+
+.headerIndex .navRight li a {
+  text-decoration: none;
+}
+
+.headerIndex .navRight li a img {
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  outline: none;
+  -webkit-transition: background;
+  transition: background;
   -webkit-transition: -webkit-transform;
   transition: -webkit-transform;
   transition: transform;
   transition: transform, -webkit-transform;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
-.PaginaProd #coresTenis button:focus {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+#welcomeIndex {
+  margin-top: 2%;
+  max-width: 100%;
 }
 
-.PaginaProd #coresTenis button:nth-child(1) {
-  background: url("../images/tenis/stefanJanoski/Camo/defaultJanoski.webp");
-  background-position: bottom center;
-  background-size: 140px 140px;
+#welcomeIndex hr {
+  border-radius: 4rem;
+  border-radius: 4rem;
 }
 
-.PaginaProd #coresTenis button:nth-child(1):hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+#welcomeIndex #welcome {
+  margin-top: 4%;
+  padding: 10px 10px;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
+  margin-left: 10%;
+  margin-right: 8%;
+  background: #ff7300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), color-stop(48%, #ff6f00), color-stop(90%, #ff7510));
+  background: linear-gradient(180deg, #ff7300 0%, #ff6f00 48%, #ff7510 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.PaginaProd #coresTenis button:nth-child(2) {
-  background: url("../images/tenis/stefanJanoski/stefanJanoskiAzul.jpg");
-  background-position: center;
-  background-size: 140px 140px;
+#welcomeIndex #aboutWelcome {
+  margin-top: 8%;
+  margin-left: 2%;
+  border: none;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 2rem;
 }
 
-.PaginaProd #coresTenis button:nth-child(2):hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+#aboutMe {
+  max-width: 100%;
 }
 
-.PaginaProd #coresTenis button:nth-child(3) {
-  background: url("../images/tenis/stefanJanoski/Preto/stefanJanoski.jpg");
-  background-position: bottom center;
-  background-size: 140px 140px;
+#aboutMe hr {
+  margin-top: 13%;
+  border-radius: 4rem;
 }
 
-.PaginaProd #coresTenis button:nth-child(3):hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+#aboutMe #aboutMeContent {
+  background: #ff4c00;
+  background: linear-gradient(66deg, #ff4c00 0%, #ff6f00 48%, #ff852c 90%);
+  height: 420px;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.PaginaProd #coresTenis button:nth-child(4) {
-  background: url("../images/tenis/stefanJanoski/stefanJanoskiBranco.jpg");
-  background-position: center;
-  background-size: 140px 140px;
+#aboutMe #aboutMeContent img {
+  width: 150px;
+  height: 150px;
+  margin-top: 5%;
+  margin-left: 25%;
 }
 
-.PaginaProd #coresTenis button:nth-child(4):hover {
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+#aboutMe #aboutMeContent h2 {
+  margin-top: 2%;
+  margin-left: 8%;
+  color: #181818;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+#aboutMe #aboutMeContent p {
+  margin-top: 2%;
+  padding: 0px 10px;
+  color: #181818;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#portifolio {
+  max-width: 100%;
+}
+
+#portifolio hr {
+  margin-top: 6%;
+  border-radius: 4rem;
+}
+
+#portifolio #portifolioContent {
+  background-color: #212121;
+  height: 400px;
+  margin-top: 6%;
+  border-radius: 1rem;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+#portifolio #portifolioContent h1 {
+  margin-top: 100px;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 17px;
 }
 
 hr {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 5%;
-  height: 5px;
-  background: #bfbfbf;
-  border: none;
-  border-radius: 10px;
+  margin-top: 8%;
+  border-radius: 4rem;
 }
 
-#aboutProduct {
-  width: 80%;
-  margin-top: 5%;
-  margin-left: 10%;
+#contato {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
 }
 
-#aboutProduct img {
-  float: left;
-  margin-right: 5%;
-  height: 600px;
-}
-
-#aboutProduct #tituloDescricao {
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  letter-spacing: 5px;
-}
-
-#aboutProduct #descricao {
+#contato #contatoContent {
   margin-top: 2%;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 3px;
+  height: 400px;
+  padding: 2rem 3rem;
 }
 
-@media (max-width: 1780px) {
-  .menuLateral {
-    padding: 13px 13px;
-    margin-top: 8rem;
-    width: 300px;
-  }
-  .menuLateral p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .menuLateral nav ul .navMarcas {
-    font-size: 22px;
-  }
-  .gridProdutos {
-    margin-left: 435px;
-  }
+#contato #contatoContent h2 {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
-@media (max-width: 1900px) {
-  .menuLateral {
-    padding: 13px 13px;
-    margin-top: 8rem;
-    width: 300px;
+#contato #contatoContent p {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 3%;
+}
+
+#contato #contatoContent #formularioContato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4%;
+}
+
+#contato #contatoContent #formularioContato form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3%;
+}
+
+#contato #contatoContent #formularioContato form:nth-child(4) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#contato #contatoContent #formularioContato form label {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+#contato #contatoContent #formularioContato form input {
+  width: 250px;
+  height: 40px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4rem;
+  margin-bottom: 4.2%;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#contato #contatoContent #formularioContato form select {
+  width: 250px;
+  height: 40px;
+  padding: 4px 6px;
+  border: none;
+  margin-bottom: 2%;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#contato #contatoContent #formularioContato form textarea {
+  width: 250px;
+  height: 150px;
+  padding: 8px 10px;
+  margin-top: 6%;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#contato #contatoContent #formularioContato form button {
+  width: 250px;
+  height: 40px;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 8%;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#contato #contatoContent .navContato {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+#contato #contatoContent .navContato li {
+  list-style: none;
+}
+
+#contato #contatoContent .navContato li a {
+  text-decoration: none;
+}
+
+#contato #contatoContent .navContato li a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#rodape {
+  margin-top: 45vh;
+}
+
+#rodape hr {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 100%;
+}
+
+#rodape #rodapeContent {
+  background: black;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#rodape #rodapeContent p {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+}
+
+#rodape #rodapeContent p span {
+  color: #ff5d00;
+}
+
+#rodape #rodapeContent p a {
+  text-decoration: none;
+  color: #ff5d00;
+  font-family: "Varela Round", sans-serif;
+}
+
+@media (min-width: 409px) {
+  #contato {
+    clear: both;
+    max-width: 100%;
   }
-  .menuLateral p {
-    font-size: 24px;
-    font-weight: 500;
+  #contato hr {
+    margin-top: 6%;
+    border-radius: 4rem;
   }
-  .menuLateral nav ul .navMarcas {
-    font-size: 22px;
+  #contato #contatoContent {
+    margin-top: 3%;
+    height: 400px;
+    padding: 2rem 3rem;
+  }
+  #contato #contatoContent h2 {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  #contato #contatoContent p {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin-top: 3%;
+  }
+  #contato #contatoContent #formularioContato {
+    margin-top: 4%;
+  }
+  #contato #contatoContent #formularioContato form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3%;
+  }
+  #contato #contatoContent #formularioContato form:nth-child(4) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #contato #contatoContent #formularioContato form label {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  #contato #contatoContent #formularioContato form input {
+    width: 250px;
+    height: 40px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4rem;
+    margin-bottom: 4.2%;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent #formularioContato form select {
+    width: 250px;
+    height: 40px;
+    padding: 4px 6px;
+    border: none;
+    margin-bottom: 2%;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent #formularioContato form textarea {
+    width: 250px;
+    height: 150px;
+    padding: 8px 10px;
+    margin-top: 6%;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent #formularioContato form button {
+    width: 250px;
+    height: 40px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4rem;
+    margin-top: 8%;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent .navContato {
+    max-width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 3%;
+  }
+  #contato #contatoContent .navContato li {
+    list-style: none;
+  }
+  #contato #contatoContent .navContato li a {
+    text-decoration: none;
+  }
+  #contato #contatoContent .navContato li a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform;
+    transition: -webkit-transform;
+    transition: transform;
+    transition: transform, -webkit-transform;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+  }
+  #contato #contatoContent .navContato li a img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #rodape {
+    margin-top: 45vh;
+  }
+  #rodape hr {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+  }
+  #rodape #rodapeContent {
+    background: black;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #rodape #rodapeContent p {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+  }
+  #rodape #rodapeContent p span {
+    color: #ff5d00;
+  }
+  #rodape #rodapeContent p a {
+    text-decoration: none;
+    color: #ff5d00;
+    font-family: "Varela Round", sans-serif;
   }
 }
 /*# sourceMappingURL=main.css.map */
