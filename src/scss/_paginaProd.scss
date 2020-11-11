@@ -1,0 +1,222 @@
+body{
+    height: 120vh;
+}
+
+.menuLateralTenis{
+    display: flex;
+    flex-direction: column;
+}
+.fotosTenis{
+    background-position: top center;
+    margin-top: 1%;
+    margin-left: 10%;
+    
+    width: 150px;
+    height: 150px;
+    
+    float: left;
+
+    transition: transform;
+    transition-duration: .2s;
+    &:hover{
+        transform: scale(1.5, 1.5)
+    }
+    &:nth-child(2){
+        clear: both;
+    }
+    &:nth-child(3){
+        clear: both;
+    }
+    &:nth-child(4){
+        clear: both;
+    }
+}
+.PaginaProd{
+    margin-top: 8rem;
+   
+    width: 80%;
+    margin-left: 10%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #nomeDoProduto{
+        position: absolute;
+        
+        margin-left: -16.5%;
+        font-family: $nunito;
+        font-size: 80px;
+        
+    }
+
+    .numeroTenis{
+       display: flex;
+       justify-items: center;
+      
+        
+        #exibirTenis{
+        border-radius: .2rem; 
+        margin-left: -4.5%;
+        width: 600px;
+        height: 600px;
+        
+        margin-right: 32%;
+        }
+    .numeroDoTenis{
+        margin-top: 6%;
+
+        display: flex;
+        flex-direction: column;
+
+        button{
+            width: 80px;
+            height: 80px;
+
+            margin-top: 15.2%;
+
+            border-radius: 50%;
+            border: 1px solid $black;
+            
+            font-family: $nunito;
+            font-size: 15px;
+
+            color: $black;
+            background: $white;
+
+            outline: none;
+
+            transition: transform;
+            transition-duration: .2s;
+            
+            &:hover{
+                transform: (scale(1.3, 1.3))
+            }
+
+            &:focus{
+                transform: (scale(1.3, 1.3))
+            }
+
+            
+            
+        }
+        .chooseSize{
+            width: 200px;
+
+            margin-left: -19%;
+
+            font-family: $nunito;
+            font-weight: bolder;
+        }
+    }
+        
+    }
+    #coresTenis{
+        
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        margin-left: -18.5%;
+        width: 50%;
+            button{
+            border: none;
+            border-radius:50%;
+
+            width: 110px;
+            height: 110px;
+
+            outline: none;
+          
+            transition:transform;
+            transition-duration: .4s;
+           
+            &:focus{
+                transform: scale(1.3,1.3);
+            }
+          
+            &:nth-child(1){
+                background: url("../images/tenis/stefanJanoski/Camo/defaultJanoski.webp");
+                background-position: bottom center;
+                background-size:140px 140px; 
+
+                &:hover{
+                    transform: scale(1.3,1.3);
+                   }
+                
+            }
+            &:nth-child(2){
+
+                background: url("../images/tenis/stefanJanoski/stefanJanoskiAzul.jpg");
+                background-position: center;
+                background-size:140px 140px; 
+
+                &:hover{
+                    transform: scale(1.3,1.3);
+                }
+            }
+            &:nth-child(3){
+
+                background: url("../images/tenis/stefanJanoski/Preto/stefanJanoski.jpg");
+                background-position: bottom center;
+                background-size:140px 140px; 
+               
+                &:hover{
+                    transform: scale(1.3,1.3);
+                }
+            }
+            &:nth-child(4){
+                background: url("../images/tenis/stefanJanoski/stefanJanoskiBranco.jpg");
+                background-position: center;
+                background-size:140px 140px; 
+                &:hover{
+                    transform: scale(1.3,1.3);
+                }
+                
+            }
+        }
+    }
+}
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        height: 5px;
+        background: $darkGray;
+        border: none;
+        border-radius: 10px;
+    }
+    #aboutProduct{
+        width: 80%;
+        
+        margin-top: 5%;
+        margin-left: 10%;
+
+        
+        img{
+            float: left;
+            margin-right: 5%;
+            height: 600px;
+        }
+
+        #tituloDescricao{
+            text-align: center;
+            font-family: $nunito;
+            font-weight: 700;
+            font-size: 50px;
+
+            letter-spacing: 5px;
+
+            
+        }
+        #descricao{
+            margin-top: 2%;
+            font-family: $nunito;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 3px;
+
+            
+        }
+    }
