@@ -21,16 +21,20 @@
         margin-left: 10%;
         margin-right: 8%;
         float: left;
-    }
 
+        background: rgb(255,115,0);
+        background: linear-gradient(180deg, rgba(255,115,0,1) 0%, rgba(255,111,0,1) 48%, rgba(255,117,16,1) 90%);    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }    
     #aboutWelcome {
 
-        margin-top: 9%;
+        margin-top: 8%;
         border: none;
         color: $white;
         font-family: $varela;
         letter-spacing: 2px;
-        font-family: 24px;
+        font-size: 18px;
         line-height: 2rem;
     }
 }
@@ -49,7 +53,8 @@
     }
 
     #aboutMeContent {
-        background-color: $gray;
+        background: rgb(255,76,0);
+        background: linear-gradient(66deg, rgba(255,76,0,1) 0%, rgba(255,111,0,1) 48%, rgba(255,133,44,1) 90%); 
         height: 400px;
         margin-top: 6%;
         border-radius: 1rem;
@@ -65,7 +70,7 @@
         }
 
         h2 {
-            color: $white;
+            color: $backgroundColor;
             font-family: $varela;
             letter-spacing: 2px;
             font-size: 28px;
@@ -73,7 +78,7 @@
 
         p {
             margin-top: 2%;
-            color: $white;
+            color: $backgroundColor;
             font-family: $varela;
             letter-spacing: 2px;
             font-size: 18px;

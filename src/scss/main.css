@@ -47,7 +47,7 @@ body {
 }
 
 .headerIndex .navLeft li .styleBorder {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ff5d00;
   width: 0%;
   -webkit-transition: width;
   transition: width;
@@ -67,12 +67,12 @@ body {
   letter-spacing: 2px;
   -webkit-transition: color;
   transition: color;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .headerIndex .navLeft li a:hover {
-  color: #fff;
+  color: #ff5d00;
 }
 
 .headerIndex .navRight {
@@ -112,6 +112,8 @@ body {
   height: 40px;
   border: none;
   border-radius: 50%;
+  -webkit-transition: background;
+  transition: background;
   -webkit-transition: -webkit-transform;
   transition: -webkit-transform;
   transition: transform;
@@ -123,6 +125,9 @@ body {
 .headerIndex .navRight li a img:hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
+  background: #ff5d00;
+  background-size: 30px;
+  background-position: center;
 }
 
 #welcomeIndex {
@@ -145,15 +150,20 @@ body {
   margin-left: 10%;
   margin-right: 8%;
   float: left;
+  background: #ff7300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), color-stop(48%, #ff6f00), color-stop(90%, #ff7510));
+  background: linear-gradient(180deg, #ff7300 0%, #ff6f00 48%, #ff7510 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #welcomeIndex #aboutWelcome {
-  margin-top: 9%;
+  margin-top: 8%;
   border: none;
   color: #fff;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
-  font-family: 24px;
+  font-size: 18px;
   line-height: 2rem;
 }
 
@@ -169,7 +179,8 @@ body {
 }
 
 #aboutMe #aboutMeContent {
-  background-color: #212121;
+  background: #ff4c00;
+  background: linear-gradient(66deg, #ff4c00 0%, #ff6f00 48%, #ff852c 90%);
   height: 400px;
   margin-top: 6%;
   border-radius: 1rem;
@@ -185,7 +196,7 @@ body {
 }
 
 #aboutMe #aboutMeContent h2 {
-  color: #fff;
+  color: #181818;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
   font-size: 28px;
@@ -193,7 +204,7 @@ body {
 
 #aboutMe #aboutMeContent p {
   margin-top: 2%;
-  color: #fff;
+  color: #181818;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
   font-size: 18px;
@@ -380,30 +391,337 @@ body {
           transform: scale(1.2);
 }
 
-@media (max-width: 1370px) {
+#rodape {
+  clear: both;
+}
+
+#rodape hr {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+#rodape #rodapeContent {
+  background: black;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#rodape #rodapeContent p {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+}
+
+#rodape #rodapeContent p span {
+  color: #ff5d00;
+}
+
+#rodape #rodapeContent p a {
+  text-decoration: none;
+  color: #ff5d00;
+  font-family: "Varela Round", sans-serif;
+}
+
+@media (max-width: 599px) {
   body {
-    height: 340vh;
+    height: 330vh;
   }
   .headerIndex {
-    margin-top: 2%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 1%;
+    height: 80px;
   }
   .headerIndex .navLeft li a {
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .headerIndex .navRight li {
+    margin-right: 5%;
+  }
+  .headerIndex .navRight li:nth-child(1) {
+    margin-right: 10%;
+  }
+  .headerIndex .navRight li:nth-child(2) {
+    margin-right: 10%;
+  }
+  .headerIndex .navRight li a img {
+    width: 30px;
+    height: 30px;
+  }
+  #welcomeIndex {
+    margin-left: 0%;
+    max-width: 100%;
+  }
+  #welcomeIndex hr {
+    border-radius: 4rem;
   }
   #welcomeIndex #welcome {
+    font-size: 50px;
+    margin-left: 2%;
+    margin-right: 0%;
+    float: none;
+  }
+  #welcomeIndex #aboutWelcome {
     margin-top: 4%;
-    font-size: 70px;
-    margin-right: 7%;
-    float: left;
+    margin-left: 2%;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 2rem;
+  }
+  #aboutMe {
+    max-width: 100%;
+    margin-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #aboutMe hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #aboutMe #aboutMeContent {
+    text-align: center;
+    height: 420px;
+    border-radius: 0%;
+  }
+  #aboutMe #aboutMeContent img {
+    width: 150px;
+    height: 150px;
+    margin-top: -10%;
+    margin-left: 15%;
+    float: none;
+  }
+  #aboutMe #aboutMeContent h2 {
+    font-size: 16px;
+    margin-top: 2%;
+    text-align: center;
+  }
+  #aboutMe #aboutMeContent p {
+    margin-top: 2%;
+    font-size: 10px;
+    margin-bottom: 2%;
+  }
+  #portifolio {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+  #portifolio #portifolioContent {
+    border-radius: 0%;
+    height: 400px;
+    margin-top: 6%;
+  }
+  #portifolio #portifolioContent h1 {
+    margin-top: 100px;
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  #contato {
+    max-width: 100%;
+    margin-left: 0%;
+    background: transparent;
+  }
+  #contato #contatoContent {
+    margin-top: 3%;
+  }
+  #contato #contatoContent h2 {
+    font-size: 15px;
+  }
+  #contato #contatoContent p {
+    letter-spacing: 2px;
+    font-size: 9px;
+    margin-top: 3%;
+  }
+  #contato #contatoContent #formularioContato {
+    float: none;
+    margin-top: 3%;
+  }
+  #contato #contatoContent #formularioContato form {
+    margin-top: 3%;
+  }
+  #contato #contatoContent #formularioContato form input {
+    width: 320px;
+  }
+  #contato #contatoContent #formularioContato form select {
+    width: 320px;
+  }
+  #contato #contatoContent #formularioContato form textarea {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    margin-top: 5%;
+    margin-left: 0%;
+    border: none;
+    border-radius: 4px;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent #formularioContato form button {
+    width: 320px;
+  }
+  #contato #contatoContent .navContato {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5%;
+  }
+  #contato #contatoContent .navContato li:nth-child(2) {
+    margin-top: 0%;
+    margin-left: 5%;
+  }
+  #contato #contatoContent .navContato li:nth-child(3) {
+    margin-top: 0%;
+    margin-left: 5%;
+  }
+  #contato #contatoContent .navContato li a {
+    text-decoration: none;
+  }
+  #contato #contatoContent .navContato li a img {
+    width: 60px;
+    height: 60px;
+  }
+  #rodape {
+    margin-top: 45vh;
+  }
+  #rodape hr {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  #rodape #rodapeContent {
+    background: black;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #rodape #rodapeContent p {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+  }
+  #rodape #rodapeContent p span {
+    color: #ff5d00;
+  }
+  #rodape #rodapeContent p a {
+    text-decoration: none;
+    color: #ff5d00;
+    font-family: "Varela Round", sans-serif;
+  }
+}
+
+@media (min-width: 1343px) {
+  #welcomeIndex #welcome {
+    font-size: 73px;
+    margin-right: 7.5%;
   }
   #welcomeIndex #aboutWelcome {
     margin-top: 6%;
-    letter-spacing: 1.5px;
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 2rem;
   }
-  #welcomeIndex #aboutMe hr {
+  #aboutMe #aboutMeContent p {
+    font-size: 16px;
+    line-height: rem;
+  }
+  #contato {
+    background-size: 380px 380px;
+    background-position: right bottom;
+  }
+  #contato #contatoContent #formularioContato {
+    margin-right: 46%;
+  }
+  #contato #contatoContent #formularioContato form textarea {
+    position: absolute;
+    width: 400px;
+    height: 265px;
+    padding: 8px 10px;
+    margin-top: 1.3%;
+    margin-left: 20%;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  #contato #contatoContent .navContato {
+    margin-top: 4.6%;
+  }
+  #contato #contatoContent .navContato li:nth-child(2) {
+    margin-top: 2.8%;
+  }
+  #contato #contatoContent .navContato li:nth-child(3) {
+    margin-top: 2.8%;
+  }
+  #contato #contatoContent .navContato li a img {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #welcomeIndex #welcome {
+    font-size: 80px;
+  }
+  #welcomeIndex #aboutWelcome {
+    font-size: 18px;
+  }
+  #aboutMe #aboutMeContent h2 {
+    font-size: 28px;
+  }
+  #aboutMe #aboutMeContent p {
+    font-size: 18px;
+  }
+  #portifolio {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  #portifolio hr {
     margin-top: 6%;
+    border-radius: 4rem;
+  }
+  #portifolio #portifolioContent {
+    background-color: #212121;
+    height: 400px;
+    margin-top: 6%;
+    border-radius: 1rem;
+    padding: 3rem 5rem;
+    text-align: center;
+  }
+  #portifolio #portifolioContent h1 {
+    margin-top: 100px;
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+    font-size: 78px;
   }
   #contato {
     clear: both;
@@ -411,8 +729,7 @@ body {
     margin-left: 10%;
     background: url("../images/images/vectorIndex.png");
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 400px 400px;
+    background-position: right top;
   }
   #contato hr {
     margin-top: 6%;
@@ -438,7 +755,7 @@ body {
   }
   #contato #contatoContent #formularioContato {
     float: left;
-    margin-right: 55%;
+    margin-right: 41%;
     margin-top: 2%;
   }
   #contato #contatoContent #formularioContato form {
@@ -491,7 +808,7 @@ body {
     height: 265px;
     padding: 8px 10px;
     margin-top: 1.3%;
-    margin-left: 22%;
+    margin-left: 18%;
     border: none;
     border-radius: 1rem;
     font-family: "Varela Round", sans-serif;
@@ -510,23 +827,23 @@ body {
     font-size: 18px;
   }
   #contato #contatoContent .navContato {
-    margin-top: 3%;
+    margin-top: 4.2%;
   }
   #contato #contatoContent .navContato li {
     list-style: none;
   }
   #contato #contatoContent .navContato li:nth-child(2) {
-    margin-top: 1.5%;
+    margin-top: 2.1%;
   }
   #contato #contatoContent .navContato li:nth-child(3) {
-    margin-top: 1.5%;
+    margin-top: 2.1%;
   }
   #contato #contatoContent .navContato li a {
     text-decoration: none;
   }
   #contato #contatoContent .navContato li a img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     -webkit-transition: -webkit-transform;
     transition: -webkit-transform;

@@ -21,7 +21,7 @@
             }
 
             .styleBorder{
-                border-bottom: 2px solid $white;
+                border-bottom: 2px solid $orange;
                 width: 0%;
 
                 transition: width;
@@ -39,10 +39,10 @@
                 letter-spacing: 2px;
 
                 transition: color;
-                transition-duration: .1s;
+                transition-duration: .5s;
 
                 &:hover{
-                    color: $white;
+                    color: $orange;
                 }
             }
         }
@@ -71,13 +71,17 @@
 
                     border: none;
                     border-radius: 50%;
+                    transition: background;
                     transition: transform;
                     transition-duration: .2s;
                     &:hover{
-                        transform: scale(1.3, 1.3)
-                    }
+                        transform: scale(1.3, 1.3);
+                        background: $orange;
+                        background-size: 30px;
+                        background-position: center; 
                     }
                 }
+            }
         }
     }
 }

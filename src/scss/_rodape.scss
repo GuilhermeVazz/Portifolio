@@ -1,0 +1,36 @@
+#rodape{
+
+    clear: both;
+
+   
+    hr{
+        margin-top: 6%;
+        margin-bottom: 6%;
+        
+        margin-left: 10%;
+        width: 80%;
+       
+    }
+
+    #rodapeContent{
+        background: black;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{ 
+            color: $white;
+            font-family: $varela;
+            span{
+                color: $orange;
+            }
+            a{
+                text-decoration: none;
+                color: $orange;
+                font-family: $varela;
+                
+            }
+        }
+    }
+}
