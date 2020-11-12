@@ -14,26 +14,29 @@
     <header>
 
         <nav class="headerIndex">
+            <div class="buttonsViewMode">
+                <button id="lightMode" onclick="switchToLightMode()"></button>
+                <button id="darkMode" onclick="removeLightMode()"></button>
+            </div>
             <ul class="navLeft">
                 <li>
-                <li>
-                    <div class="styleBorder"><a href="">Inicio</a></div>
+                    <div class="styleBorder"><a href="#">Inicio</a></div>
                 </li>
                 <li>
                     <div class="styleBorder"><a href="#aboutMe">Sobre</a></div>
                 </li>
                 <li>
-                    <div class="styleBorder"><a href="">Projetos</a></div>
+                    <div class="styleBorder"><a href="#">Projetos</a></div>
                 </li>
                 <li>
-                    <div class="styleBorder"><a href="">Contato</a></div>
+                    <div class="styleBorder"><a href="# ">Contato</a></div>
                 </li>
             </ul>
 
             <ul class="navRight">
-                <li><a href=""><img src="./src/images/icons/iconGitHub.png"></a></li>
-                <li><a href=""><img src="src/images/icons/iconLinkedin.png"></a></li>
-                <li><a href=""><img src="src/images/icons/iconInstagram.png"></a></li>
+                <li><a href=""><img id="iconGitHub" src="./src/images/icons/iconGitHub.png"></a></li>
+                <li><a href=""><img id="iconLinkedIn" src="src/images/icons/iconLinkedin.png"></a></li>
+                <li><a href=""><img id="iconInstagram" src="src/images/icons/iconInstagram.png"></a></li>
             </ul>
         </nav>
 
@@ -41,11 +44,11 @@
 
     <main>
         <!-- 626x 469 -->
-        <section id="welcomeIndex">
+        <section class="welcomeIndex">
             <hr>
 
-            <h1 id="welcome">Olha só,<br>que prazer<br>te ver<br>por aqui</h1>
-            <p id="aboutWelcome">Sinta-se livre para dar um explorada, aqui você possui o controle =). <br>Atráves
+            <h1 class="welcome">Olha só,<br>que prazer<br>te ver<br>por aqui</h1>
+            <p class="aboutWelcome">Sinta-se livre para dar um explorada, aqui você possui o controle =). <br>Atráves
                 desse portifólio montado humildamente por mim,<br> você poderá encontrar projetos, informações sobre
                 mim (prometo que sou um pessoa muuuito legal haha) e informações de contato. caso queria queria pular
                 direto para um parte especifica use o menu no topo da página, ele irá te guiar para onde desejar. Muito
@@ -56,7 +59,7 @@
 
         <section id="aboutMe">
             <hr>
-            <div id="aboutMeContent">
+            <div class="aboutMeContent">
                 <div class="alignAboutMe">
                     <img src="./src/images/images/avatarAboutMe.png">
                     <h2>Olá, me chamo Guilherme.</h2>
@@ -75,19 +78,19 @@
 
         <section id="portifolio">
             <hr>
-            <div id="portifolioContent">
+            <div class="portifolioContent">
 
                 <h1> EM CONSTRUÇÃO</h1>
 
             </div>
-            
+
         </section>
         <hr class="hrContato">
         <section id="contato">
-           
+
             <div id="contatoContent">
-                <h2>Aqui você consegue falar comigo ;)</h2>
-                <p>No momento o formulário de contato <strong>ainda não está funcionando</strong><br>
+                <h2 class="h2Contato">Aqui você consegue falar comigo ;)</h2>
+                <p class="pContato">No momento o formulário de contato <strong>ainda não está funcionando</strong><br>
                     para enviar alguma mensagem <strong>utilize alguma rede social.</strong></p>
 
                 <div id="formularioContato">
@@ -106,9 +109,9 @@
                         <textarea id="texto" placeholder="Sua mensagem vem aqui" required></textarea>
                         <button type="submit" id="enviarMensagem">Enviar</button>
                         <ul class="navContato">
-                            <li><a href=""><img src="./src/images/icons/iconGitHub.png"></a></li>
-                            <li><a href=""><img src="src/images/icons/iconLinkedin.png"></a></li>
-                            <li><a href=""><img src="src/images/icons/iconInstagram.png"></a></li>
+                            <li><a href=""><img id="iconGitHub" src="./src/images/icons/iconGitHub.png"></a></li>
+                            <li><a href=""><img id="iconLinkedIn" src="./src/images/icons/iconLinkedin.png"></a></li>
+                            <li><a href=""><img id="iconInstagram" ssrc="./src/images/icons/iconInstagram.png"></a></li>
                         </ul>
                     </form>
                 </div>
@@ -121,16 +124,18 @@
 
     <footer>
 
-        <div id="rodape">
+        <div class="rodape">
             <hr>
-            <div id="rodapeContent">
+            <div class="rodapeContent">
 
-                <p>Made with <span>♥</span> by <a href="#">Guilherme Vaz</a></p>
+                <p>Made with <span>♥</span> by <a href="https://github.com/GuilhermeVazz" target="_blank">Guilherme Vaz</a></p>
             </div>
 
         </div>
-
     </footer>
+
+
+    <script src="src/script/switchDarkMode.js"></script>
 </body>
 
 </html>
