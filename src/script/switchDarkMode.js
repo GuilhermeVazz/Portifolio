@@ -51,6 +51,9 @@ function alterarImageMenu(){
     document.getElementById("iconGitHub").src = "./src/images/icons/iconGitHubBlack.png"
     document.getElementById("iconLinkedIn").src = "./src/images/icons/iconLinkedinBlack.png"
     document.getElementById("iconInstagram").src = "./src/images/icons/iconInstagramBlack.png"
+    document.getElementById("iconGitHub1").src = "./src/images/icons/iconGitHubBlack.png"
+    document.getElementById("iconLinkedIn1").src = "./src/images/icons/iconLinkedinBlack.png"
+    document.getElementById("iconInstagram1").src = "./src/images/icons/iconInstagramBlack.png"
 }
 
 function removeLightMode() {
