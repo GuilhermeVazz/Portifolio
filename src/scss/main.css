@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #181818;
+  background: #181818;
   max-width: 100%;
   height: 320vh;
 }
@@ -31,6 +31,10 @@ html {
   background: transparent;
 }
 
+.headerIndex .buttonsViewMode {
+  display: none;
+}
+
 .headerIndex .navLeft {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +52,14 @@ html {
 
 .headerIndex .navLeft li:nth-child(1) {
   margin-left: 2%;
+}
+
+.headerIndex .navLeft li .styleBorderLight {
+  border-bottom: 2px solid #bc00ff;
+}
+
+.headerIndex .navLeft li .styleBorderLight:hover {
+  width: 100%;
 }
 
 .headerIndex .navLeft li a {
@@ -94,21 +106,30 @@ html {
 .headerIndex .navRight li a img {
   width: 30px;
   height: 30px;
+  border-radius: 1px solid #181818;
   border: none;
   border-radius: 50%;
 }
 
-#welcomeIndex {
+.headerIndex .lightMode li a {
+  color: black;
+}
+
+.headerIndex .lightMode li a:hover {
+  color: #a200ff;
+}
+
+.welcomeIndex {
   margin-top: 2%;
   max-width: 100%;
 }
 
-#welcomeIndex hr {
+.welcomeIndex hr {
   margin-top: 0%;
   border-radius: 4rem;
 }
 
-#welcomeIndex #welcome {
+.welcomeIndex .welcome {
   margin-top: 4%;
   padding: 10px 10px;
   color: #fff;
@@ -124,7 +145,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-#welcomeIndex #aboutWelcome {
+.welcomeIndex .aboutWelcome {
   margin-top: 8%;
   margin-left: 2%;
   border: none;
@@ -133,6 +154,19 @@ html {
   letter-spacing: 2px;
   font-size: 12px;
   line-height: 2rem;
+}
+
+.welcomeIndex .welcomeLight {
+  background: #bc00ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#bc00ff), color-stop(42%, #a200ff), color-stop(90%, #8410ff));
+  background: linear-gradient(0deg, #bc00ff 0%, #a200ff 42%, #8410ff 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcomeIndex .aboutWelcomeLight {
+  color: black;
 }
 
 #aboutMe {
@@ -144,7 +178,7 @@ html {
   border-radius: 4rem;
 }
 
-#aboutMe #aboutMeContent {
+#aboutMe .aboutMeContent {
   background: #ff4c00;
   background: linear-gradient(66deg, #ff4c00 0%, #ff6f00 48%, #ff852c 90%);
   height: 420px;
@@ -162,13 +196,13 @@ html {
   text-align: center;
 }
 
-#aboutMe #aboutMeContent img {
+#aboutMe .aboutMeContent img {
   width: 150px;
   height: 150px;
   margin-top: 5%;
 }
 
-#aboutMe #aboutMeContent h2 {
+#aboutMe .aboutMeContent h2 {
   margin-top: 2%;
   color: #181818;
   font-family: "Varela Round", sans-serif;
@@ -177,7 +211,7 @@ html {
   text-align: center;
 }
 
-#aboutMe #aboutMeContent p {
+#aboutMe .aboutMeContent p {
   margin-top: 2%;
   padding: 0px 10px;
   color: #181818;
@@ -185,6 +219,11 @@ html {
   letter-spacing: 2px;
   font-size: 11px;
   text-align: center;
+}
+
+#aboutMe .aboutMeContentLight {
+  background: #bc00ff;
+  background: linear-gradient(189deg, #bc00ff 0%, #a200ff 42%, #8410ff 90%);
 }
 
 #portifolio {
@@ -196,8 +235,9 @@ html {
   border-radius: 4rem;
 }
 
-#portifolio #portifolioContent {
-  background-color: #212121;
+#portifolio .portifolioContent {
+  background: #ff4c00;
+  background: linear-gradient(66deg, #ff4c00 0%, #ff6f00 48%, #ff852c 90%);
   height: 400px;
   margin-top: 6%;
   border-radius: 1rem;
@@ -205,12 +245,17 @@ html {
   text-align: center;
 }
 
-#portifolio #portifolioContent h1 {
+#portifolio .portifolioContent h1 {
   margin-top: 100px;
   color: #fff;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 2px;
   font-size: 17px;
+}
+
+#portifolio .portifolioContentLight {
+  background: #bc00ff;
+  background: linear-gradient(189deg, #bc00ff 0%, #a200ff 42%, #8410ff 90%);
 }
 
 hr {
@@ -252,6 +297,15 @@ hr {
   letter-spacing: 2px;
   font-size: 10px;
   margin-top: 3%;
+}
+
+#contato #contatoContent .h2Light {
+  color: black;
+}
+
+#contato #contatoContent .pLight {
+  color: black;
+  font-size: 12px;
 }
 
 #contato #contatoContent #formularioContato {
@@ -298,7 +352,7 @@ hr {
   width: 250px;
   height: 40px;
   padding: 4px 8px;
-  border: none;
+  border: 1px solid black;
   border-radius: 4rem;
   margin-bottom: 4.2%;
   font-family: "Varela Round", sans-serif;
@@ -310,7 +364,7 @@ hr {
   width: 250px;
   height: 40px;
   padding: 4px 6px;
-  border: none;
+  border: 1px solid black;
   margin-bottom: 2%;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 1px;
@@ -322,7 +376,7 @@ hr {
   height: 150px;
   padding: 8px 10px;
   margin-top: 6%;
-  border: none;
+  border: 1px solid black;
   border-radius: 1rem;
   font-family: "Varela Round", sans-serif;
   letter-spacing: 1px;
@@ -373,17 +427,17 @@ hr {
   border-radius: 50%;
 }
 
-#rodape {
+.rodape {
   margin-top: 50vh;
 }
 
-#rodape hr {
+.rodape hr {
   margin-top: 6%;
   margin-bottom: 6%;
   width: 100%;
 }
 
-#rodape #rodapeContent {
+.rodape .rodapeContent {
   background: black;
   width: 100%;
   height: 150px;
@@ -398,19 +452,24 @@ hr {
           justify-content: center;
 }
 
-#rodape #rodapeContent p {
+.rodape .rodapeContent p {
   color: #fff;
   font-family: "Varela Round", sans-serif;
 }
 
-#rodape #rodapeContent p span {
+.rodape .rodapeContent p span {
   color: #ff5d00;
 }
 
-#rodape #rodapeContent p a {
+.rodape .rodapeContent p a {
   text-decoration: none;
   color: #ff5d00;
   font-family: "Varela Round", sans-serif;
+}
+
+.rodape .rodapeContentLight {
+  background: #bc00ff;
+  background: linear-gradient(189deg, #bc00ff 0%, #a200ff 42%, #8410ff 90%);
 }
 
 @media (min-width: 409px) {
@@ -544,15 +603,15 @@ hr {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  #rodape {
+  .rodape {
     margin-top: 50vh;
   }
-  #rodape hr {
+  .rodape hr {
     margin-top: 6%;
     margin-bottom: 6%;
     width: 100%;
   }
-  #rodape #rodapeContent {
+  .rodape .rodapeContent {
     background: black;
     width: 100%;
     height: 150px;
@@ -566,17 +625,21 @@ hr {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #rodape #rodapeContent p {
+  .rodape .rodapeContent p {
     color: #fff;
     font-family: "Varela Round", sans-serif;
   }
-  #rodape #rodapeContent p span {
+  .rodape .rodapeContent p span {
     color: #ff5d00;
   }
-  #rodape #rodapeContent p a {
+  .rodape .rodapeContent p a {
     text-decoration: none;
     color: #ff5d00;
     font-family: "Varela Round", sans-serif;
+  }
+  .rodape .rodapeContentLight {
+    background: #bc00ff;
+    background: linear-gradient(189deg, #bc00ff 0%, #a200ff 42%, #8410ff 90%);
   }
 }
 
@@ -611,14 +674,14 @@ hr {
     width: 35px;
     height: 35px;
   }
-  #welcomeIndex #welcome {
+  .welcomeIndex .welcome {
     margin-top: 4%;
     padding: 10px 10px;
     color: #fff;
     font-family: "Varela Round", sans-serif;
     font-size: 50px;
   }
-  #welcomeIndex #aboutWelcome {
+  .welcomeIndex .aboutWelcome {
     margin-top: 4%;
   }
   #aboutMe {
@@ -628,11 +691,11 @@ hr {
     margin-top: 3%;
     border-radius: 4rem;
   }
-  #aboutMe #aboutMeContent h2 {
+  #aboutMe .aboutMeContent h2 {
     margin-left: 0%;
     font-size: 20px;
   }
-  #aboutMe #aboutMeContent p {
+  #aboutMe .aboutMeContent p {
     margin-top: 2%;
     padding: 0px 10px;
     color: #181818;
@@ -652,6 +715,44 @@ hr {
     height: 80px;
     margin-left: 10%;
   }
+  .headerIndex .buttonsViewMode {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2.8%;
+    margin-left: 83%;
+  }
+  .headerIndex .buttonsViewMode button {
+    background: url("../images/icons/iconSol.png");
+    background-position: center;
+    background-size: 60px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin-top: 20%;
+    outline: none;
+    -webkit-transition: -webkit-transform;
+    transition: -webkit-transform;
+    transition: transform;
+    transition: transform, -webkit-transform;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+  }
+  .headerIndex .buttonsViewMode button:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .headerIndex .buttonsViewMode button:nth-child(2) {
+    background: url("../images/icons/iconLua.svg");
+    background-position: center;
+    background-size: 60px;
+  }
   .headerIndex .navLeft {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -660,6 +761,7 @@ hr {
         -ms-flex-pack: start;
             justify-content: flex-start;
     float: left;
+    margin-left: 0%;
   }
   .headerIndex .navLeft li {
     margin-left: 4%;
@@ -675,6 +777,12 @@ hr {
   .headerIndex .navLeft li .styleBorder:hover {
     width: 100%;
   }
+  .headerIndex .navLeft li .styleBorder .styleBorderLight {
+    border-bottom: 2px solid #bc00ff;
+  }
+  .headerIndex .navLeft li .styleBorder .styleBorderLight:hover {
+    width: 100%;
+  }
   .headerIndex .navLeft li a {
     font-size: 25px;
     letter-spacing: 2px;
@@ -685,6 +793,15 @@ hr {
   }
   .headerIndex .navLeft li a:hover {
     color: #ff5d00;
+  }
+  .headerIndex .navLeft li .aLight {
+    -webkit-transition: color;
+    transition: color;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+  }
+  .headerIndex .navLeft li .aLight:hover {
+    color: #bc00ff;
   }
   .headerIndex .navRight li:nth-child(1) {
     margin-right: 15%;
@@ -709,16 +826,16 @@ hr {
     -webkit-transform: scale(1.3, 1.3);
             transform: scale(1.3, 1.3);
   }
-  #welcomeIndex {
+  .welcomeIndex {
     margin-top: 2%;
     margin-left: 10%;
     max-width: 80%;
   }
-  #welcomeIndex hr {
+  .welcomeIndex hr {
     border-radius: 4rem;
     border-radius: 4rem;
   }
-  #welcomeIndex #welcome {
+  .welcomeIndex .welcome {
     margin-top: 4%;
     padding: 10px 10px;
     color: #fff;
@@ -728,7 +845,7 @@ hr {
     margin-right: 8%;
     float: left;
   }
-  #welcomeIndex #aboutWelcome {
+  .welcomeIndex .aboutWelcome {
     margin-top: 6.2%;
     border: none;
     color: #fff;
@@ -736,6 +853,9 @@ hr {
     letter-spacing: 1px;
     font-size: 15px;
     line-height: 2rem;
+  }
+  .welcomeIndex .aboutWelcomeLight {
+    color: black;
   }
   #aboutMe {
     clear: both;
@@ -746,14 +866,14 @@ hr {
     margin-top: 13%;
     border-radius: 4rem;
   }
-  #aboutMe #aboutMeContent {
+  #aboutMe .aboutMeContent {
     background-color: #212121;
     height: 400px;
     margin-top: 6%;
     border-radius: 1rem;
     padding: 3rem 5rem;
   }
-  #aboutMe #aboutMeContent img {
+  #aboutMe .aboutMeContent img {
     width: 300px;
     height: 300px;
     margin-top: -2%;
@@ -761,14 +881,14 @@ hr {
     margin-right: 10%;
     float: left;
   }
-  #aboutMe #aboutMeContent h2 {
+  #aboutMe .aboutMeContent h2 {
     margin-top: -2%;
     color: #fff;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 2px;
     font-size: 28px;
   }
-  #aboutMe #aboutMeContent p {
+  #aboutMe .aboutMeContent p {
     color: #fff;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 2px;
@@ -782,7 +902,7 @@ hr {
     margin-top: 6%;
     border-radius: 4rem;
   }
-  #portifolio #portifolioContent {
+  #portifolio .portifolioContent {
     background-color: #212121;
     height: 400px;
     margin-top: 6%;
@@ -790,7 +910,7 @@ hr {
     padding: 3rem 5rem;
     text-align: center;
   }
-  #portifolio #portifolioContent h1 {
+  #portifolio .portifolioContent h1 {
     margin-top: 100px;
     color: #fff;
     font-family: "Varela Round", sans-serif;
@@ -865,7 +985,7 @@ hr {
     width: 250px;
     height: 40px;
     padding: 4px 8px;
-    border: none;
+    border: 1px solid black;
     border-radius: 4rem;
     margin-bottom: 4.2%;
     font-family: "Varela Round", sans-serif;
@@ -876,7 +996,7 @@ hr {
     width: 250px;
     height: 40px;
     padding: 4px 6px;
-    border: none;
+    border: 1px solid black;
     margin-bottom: 2%;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 1px;
@@ -889,7 +1009,7 @@ hr {
     padding: 8px 10px;
     margin-top: 1.3%;
     margin-left: 25%;
-    border: none;
+    border: 1px solid black;
     border-radius: 1rem;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 1px;
@@ -901,7 +1021,7 @@ hr {
     padding: 4px 6px;
     border: none;
     border-radius: 4rem;
-    margin-top: 8%;
+    border: 1px solid black;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 1px;
     font-size: 18px;
@@ -938,10 +1058,10 @@ hr {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  #rodape {
+  .rodape {
     margin-top: 18vh;
   }
-  #rodape hr {
+  .rodape hr {
     margin-top: 6%;
     margin-bottom: 5%;
     width: 80%;
@@ -950,10 +1070,13 @@ hr {
 }
 
 @media (min-width: 1500px) {
-  #welcomeIndex #aboutWelcome {
+  .welcomeIndex .aboutWelcome {
     margin-top: 6.5%;
     font-size: 19px;
     line-height: 2rem;
+  }
+  .welcomeIndex .aboutWelcomeLight {
+    color: black;
   }
   #aboutMe hr {
     margin-top: 5%;
@@ -981,7 +1104,7 @@ hr {
     padding: 8px 10px;
     margin-top: 1.3%;
     margin-left: 21.3%;
-    border: none;
+    border: 1px solid black;
     border-radius: 1rem;
     font-family: "Varela Round", sans-serif;
     letter-spacing: 1px;
